@@ -1,6 +1,6 @@
 # SignalSolvers
-Team name   : SignalSolvers
-Hipster     : Rasyid Al-Luthfi Sukafdi
-Huslter     : Tanesha Angeline Phangelisa
-Hacker      : Pieter Christy Yan Yudhistira
-              Steven Anthony
+Team name   : SignalSolvers <br>
+Hipster     : Rasyid Al-Luthfi Sukafdi <br>
+Huslter     : Tanesha Angeline Phangelisa <br>
+Hacker      : Pieter Christy Yan Yudhistira <br>
+              Steven Anthony <br>
