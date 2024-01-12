@@ -5,3 +5,5 @@ Team name   : SignalSolvers <br>
 3) Pieter Christy Yan Yudhistira (Hacker)<br>
 4) Steven Anthony (Hacker)<br>
 
+Detail Screenshot terdapat di direktori masing-masing
+
