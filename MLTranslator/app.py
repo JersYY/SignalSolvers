@@ -3,11 +3,11 @@ from keras.utils import to_categorical
 from keras.models import model_from_json
 from keras.layers import LSTM, Dense
 from keras.callbacks import TensorBoard
-json_file = open("model.json", "r")
+json_file = open("MLTranslator/model.json", "r")
 model_json = json_file.read()
 json_file.close()
 model = model_from_json(model_json)
-model.load_weights("model.h5")
+model.load_weights("MLTranslator/model.h5")
 
 colors = []
 for i in range(0,20):
@@ -85,7 +85,7 @@ with mp_hands.Hands(
             pass
             
         cv2.rectangle(frame, (0,0), (300, 40), (245, 117, 16), -1)
-        cv2.putText(frame,"Output: -"+' '.join(sentence)+''.join(accuracy), (3,30), 
+        cv2.putText(frame,"Output: "+' '.join(sentence)+''.join(accuracy), (3,30), 
                        cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 255, 255), 2, cv2.LINE_AA)
         
         # Show to screen

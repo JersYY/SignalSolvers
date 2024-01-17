@@ -20,7 +20,7 @@ X = np.array(sequences)
 y = to_categorical(labels).astype(int)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.05)
 
-log_dir = os.path.join('Logs')
+log_dir = os.path.join('MLTranslator/Logs')
 tb_callback = TensorBoard(log_dir=log_dir)
 model = Sequential()
 model.add(LSTM(64, return_sequences=True, activation='relu', input_shape=(30,63)))
@@ -36,6 +36,6 @@ model.fit(X_train, y_train, epochs=200, callbacks=[tb_callback])
 model.summary()
 
 model_json = model.to_json()
-with open("model.json", "w") as json_file:
+with open("MLTranslator/model.json", "w") as json_file:
     json_file.write(model_json)
-model.save('model.h5')
+model.save('MLTranslator/model.h5')
